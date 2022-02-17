@@ -1,0 +1,9 @@
+compact: true
+evaluate-variables: true
+no-guide: true
+quiet: true
+skip-fixes: true
+skip-framework:
+  - kubernetes
+skip-suppressions: true
+soft-fail: false
