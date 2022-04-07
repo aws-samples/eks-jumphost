@@ -56,6 +56,7 @@ resource "aws_iam_role" "role" {
 resource "aws_instance" "instance" {
   ami                         = data.aws_ami.amazon_linux_2_ami.id
   associate_public_ip_address = false
+  disable_api_termination     = var.disable_api_termination
   ebs_optimized               = true
   iam_instance_profile        = aws_iam_instance_profile.instance_profile.name
   instance_type               = var.instance_type

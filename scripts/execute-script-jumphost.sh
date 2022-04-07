@@ -13,7 +13,7 @@ set -Eeuo pipefail
 
 # Open SSH tunnel
 TEMP_DIR=$(mktemp -d)
-ssh-keygen -t rsa -N '' -f "$TEMP_DIR"/key
+ssh-keygen -N '' -b 4096 -f "$TEMP_DIR"/key -t rsa
 aws ec2-instance-connect send-ssh-public-key \
     --instance-id "$INSTANCE_ID" \
     --instance-os-user ec2-user \
@@ -33,7 +33,6 @@ ssh ec2-user@"$INSTANCE_ID" -D "$LOCAL_PORT" -Nf \
 # Replace the section between ### SCRIPT ###
 # if you want to run this script manually
 ### SCRIPT ###
-# shellcheck disable=SC2154
 ${script}
 ### SCRIPT ###
 
