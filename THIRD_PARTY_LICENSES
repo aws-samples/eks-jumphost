@@ -1,0 +1,10 @@
+Name               | License                               | URL
+-------------------------------------------------------------------------------------------------------------------------------------------
+TFLint             | Mozilla Public License v2.0 (MPL 2.0) | https://github.com/terraform-linters/tflint/blob/master/LICENSE
+Terraform          | Mozilla Public License v2.0 (MPL 2.0) | https://github.com/hashicorp/terraform/blob/main/LICENSE
+checkov            | Apache v2.0                           | https://github.com/bridgecrewio/checkov/blob/master/LICENSE
+pre-commit         | MIT                                   | https://github.com/pre-commit/pre-commit/blob/main/LICENSE
+tflint-ruleset-aws | Mozilla Public License v2.0 (MPL 2.0) | https://github.com/terraform-linters/tflint-ruleset-aws/blob/master/LICENSE
+terraform-aws-eks  | Apache v2.0                           | https://github.com/terraform-aws-modules/terraform-aws-eks/blob/master/LICENSE
+terraform-aws-vpc  | Apache v2.0                           | https://github.com/terraform-aws-modules/terraform-aws-vpc/blob/master/LICENSE
+tfsec              | MIT                                   | https://github.com/aquasecurity/tfsec/blob/master/LICENSE

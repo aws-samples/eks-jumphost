@@ -1,3 +1,9 @@
+variable "disable_api_termination" {
+  default     = false
+  description = "If true, enables EC2 Instance Termination Protection"
+  type        = bool
+}
+
 variable "https_egress_cidr_blocks" {
   default     = null
   description = "The IPv4 CIDR blocks to which allow HTTPS egress traffic"
